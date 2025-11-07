@@ -1,16 +1,5 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+import torch
+import d2l
+print("PyTorch 版本:", torch.__version__)
+print("d2l 版本:", d2l.__version__)
+print("CUDA 是否可用:", torch.cuda.is_available())  # 应返回 False，因为安装的是CPU版本
